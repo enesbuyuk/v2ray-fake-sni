@@ -1,5 +1,5 @@
 # V2Ray Fake SNI Document
-v2ray fake sni
+Fake SNI in V2Ray
 
 ## Installation:
 
@@ -14,7 +14,7 @@ bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/
 Create an SSL certificate with the following command:
 
 ```bash
-sudo openssl req -x509 -newkey rsa:4096 -nodes -keyout /usr/local/etc/v2ray/2ray-cert.pem -out /usr/local/etc/v2ray/2ray-cert.pem -days 365 -subj "/CN=example-fake-sni.com"
+sudo openssl req -x509 -newkey rsa:4096 -nodes -keyout /usr/local/etc/v2ray/v2ray-cert.pem -out /usr/local/etc/v2ray/v2ray-cert.pem -days 365 -subj "/CN=example-fake-sni.com"
 ```
 
 ### 3. Set File Permissions:
