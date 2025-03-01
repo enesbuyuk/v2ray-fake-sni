@@ -65,3 +65,11 @@ Create a configuration file at `/usr/local/etc/v2ray/config.json` with the follo
   ]
 }
 ```
+
+### 5. Enable and Start V2Ray:
+Enable and start V2Ray using with the following commands:
+
+```bash
+systemctl enable v2ray;
+systemctl start v2ray;
+```
