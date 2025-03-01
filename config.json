@@ -1,0 +1,35 @@
+{
+  "inbounds": [
+    {
+      "port": YOUR_PORT,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "YOUR_UUID_HERE",
+            "alterId": 64
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "example-fake-sni.com",
+          "certificates": [
+            {
+              "certificateFile": "/usr/local/etc/v2ray/v2ray-cert.pem",
+              "keyFile": "/usr/local/etc/v2ray/v2ray-key.pem"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
+}
