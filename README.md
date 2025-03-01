@@ -28,11 +28,11 @@ chmod 644 /usr/local/etc/v2ray/v2ray-key.pem;
 ### 4. Configure V2Ray:
 Create a configuration file at `/usr/local/etc/v2ray/config.json` with the following content:
 
-```
+```json
 {
   "inbounds": [
     {
-      "port": 2087,
+      "port": YOUR_PORT,
       "protocol": "vmess",
       "settings": {
         "clients": [
