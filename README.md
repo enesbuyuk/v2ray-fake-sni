@@ -18,7 +18,8 @@ sudo openssl req -x509 -newkey rsa:4096 -nodes \
 -keyout /usr/local/etc/v2ray/v2ray-key.pem \
 -out /usr/local/etc/v2ray/v2ray-cert.pem \
 -days 365 \
--subj "/CN=example.com"```
+-subj "/CN=example.com"
+```
 
 ### 3. Set File Permissions:
 Adjust the permissions of the certificate and key files:
